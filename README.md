@@ -1,16 +1,89 @@
-# React + Vite
+🎬 CineSearch — 3D Movie Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stunning dark-themed 3D movie search application built with React + Vite
+🌐 Live Demo • 📁 Source Code
+</div>
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔍 Search Movies — Search millions of movies, series & episodes instantly
+🎭 Filter — Filter by type (Movie / Series / Episode) and release year
+🎬 Movie Details — Full details including plot, cast, director, awards & ratings
+❤️ Watchlist — Save your favorite movies locally with localStorage
+🌀 3D Card Effects — Real mouse-tracked 3D tilt on every movie card
+💡 Quick Suggestions — One-click popular search chips
+🌙 Dark Cinema Theme — Animated grid background with glowing accents
+📱 Responsive — Works on desktop and mobile
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠️ Tech Stack
+TechnologyPurposeReact 18UI components & state managementVite 5Lightning fast build toolReact Router DOM v6Page navigationOMDB APIMovie data sourcePlain CSSStyling with 3D effectslocalStorageWatchlist persistence
 
-## Expanding the ESLint configuration
+📁 Project Structure
+movie-search-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx        # Sticky navbar with watchlist count
+│   │   ├── SearchBar.jsx     # Search input with suggestions
+│   │   ├── Filters.jsx       # Type & year filters
+│   │   ├── MovieCard.jsx     # 3D tilt movie card
+│   │   └── MovieDetail.jsx   # Full detail modal
+│   ├── pages/
+│   │   ├── Home.jsx          # Search results page
+│   │   └── WatchlistPage.jsx # Saved movies page
+│   ├── App.jsx               # Root component + routing
+│   ├── App.css               # Global styles & 3D theme
+│   └── main.jsx              # Entry point
+├── .env                      # API key (not committed)
+├── index.html
+├── package.json
+└── vite.config.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Getting Started
+1. Clone the repository
+bashgit clone https://github.com/naveenrajk17-dev/movie-search-app.git
+cd movie-search-app
+2. Install dependencies
+bashnpm install
+3. Get a free OMDB API Key
+👉 Go to https://www.omdbapi.com/apikey.aspx
+
+Select FREE (1,000 daily limit)
+Enter your email and submit
+Click the activation link in your email
+
+4. Add your API key
+Create a .env file in the root folder:
+envVITE_OMDB_API_KEY=your_api_key_here
+5. Run the app
+bashnpm run dev
+Open http://localhost:5173 in your browser 🎉
+
+🌐 Deployment
+Deploy to GitHub Pages
+bashnpm run build
+Then push the dist/ folder to your gh-pages branch.
+
+📦 API Used
+This project uses the OMDB API (Open Movie Database)
+
+🔗 Website: https://www.omdbapi.com
+💰 Free tier: 1,000 requests/day
+📄 Data: Movies, Series, Episodes, Ratings, Posters, Cast, Awards
+
+
+🎯 What I Learned
+
+Building React apps with Vite
+Working with external REST APIs
+React Router DOM for page navigation
+useState & useEffect hooks
+localStorage for data persistence
+CSS 3D transforms and animations
+Component-based architecture
+Deploying React apps to GitHub Pages
+
+
+👨‍💻 Author
+Naveen Raj K

@@ -1,0 +1,100 @@
+.wl-page {
+  min-height: 100vh;
+  position: relative;
+}
+
+.wl-header {
+  padding: 56px 32px 32px;
+  position: relative;
+}
+
+.wl-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.wl-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: var(--text);
+}
+
+.wl-accent { color: var(--accent); }
+
+.wl-count {
+  font-size: 13px;
+  color: var(--text3);
+  border: 1px solid var(--border2);
+  padding: 4px 12px;
+  border-radius: 99px;
+}
+
+.wl-sub {
+  font-size: 14px;
+  color: var(--text3);
+  font-weight: 300;
+}
+
+.wl-grid-wrap {
+  padding: 0 32px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.wl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  gap: 18px;
+}
+
+.wl-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 100px 24px;
+  text-align: center;
+}
+
+.empty-circle {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px;
+  color: var(--text3);
+  animation: float 3s ease infinite;
+}
+
+.wl-empty h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text2);
+}
+
+.wl-empty p {
+  font-size: 14px;
+  color: var(--text3);
+  font-weight: 300;
+}
+
+.go-search-btn {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+
+.go-search-btn:hover { opacity: 0.88; transform: translateY(-2px); }

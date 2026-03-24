@@ -19,27 +19,6 @@ A stunning dark-themed 3D movie search application built with React + Vite
 🛠️ Tech Stack
 TechnologyPurposeReact 18UI components & state managementVite 5Lightning fast build toolReact Router DOM v6Page navigationOMDB APIMovie data sourcePlain CSSStyling with 3D effectslocalStorageWatchlist persistence
 
-📁 Project Structure
-movie-search-app/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx        # Sticky navbar with watchlist count
-│   │   ├── SearchBar.jsx     # Search input with suggestions
-│   │   ├── Filters.jsx       # Type & year filters
-│   │   ├── MovieCard.jsx     # 3D tilt movie card
-│   │   └── MovieDetail.jsx   # Full detail modal
-│   ├── pages/
-│   │   ├── Home.jsx          # Search results page
-│   │   └── WatchlistPage.jsx # Saved movies page
-│   ├── App.jsx               # Root component + routing
-│   ├── App.css               # Global styles & 3D theme
-│   └── main.jsx              # Entry point
-├── .env                      # API key (not committed)
-├── index.html
-├── package.json
-└── vite.config.js
-
 🚀 Getting Started
 1. Clone the repository
 bashgit clone https://github.com/naveenrajk17-dev/movie-search-app.git
